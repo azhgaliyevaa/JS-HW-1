@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// Задание 8
+
+// Попросить пользователя ввести одно число, следом - второе число. Вывести в консоль максимальное из чисел (наибольшее) с текстом: Большее число: 7 (вместо 7 будет максимальное число из введенных пользователем).
+
+// * предусмотреть вариант ввода одинаковых чисел
+
+          const userNumber1 = prompt(`Введите число`);
+          const userNumber2 = prompt(`Введите другое число`);
+            if (userNumber1 === userNumber2) {
+                console.log("Вы ввели одинаковые числа");
+            }
+         else if (userNumber1 > userNumber2) {
+            console.log(`Большее число: ` + userNumber1);
+          }
+          else {
+            console.log(`Большее число: ` + userNumber2);
+          }
+    </script>
+</body>
+</html>

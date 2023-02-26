@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// Задание 11
+// Запросить у пользователя ответы на 2 вопроса:
+// - балл за экзамен (от 0 до 100)
+// - количество выполненных проектов (от 0 и больше)
+// Вывести в консоль общий выпускной балл в соответствии с этими значениями:
+// - 100, если балл за экзамен более 90 или количество проектов более 10.
+// - 90, если балл за экзамен более 75 и количество проектов не менее 5.
+// - 75, если балл за экзамен более 50 и количество проектов не менее 2.
+// - 0 во всех других случаях.
+
+    const grade = prompt(`Балл за экзамен (от 0 до 100)`);
+    const numberProjects = prompt(`Количество выполненных проектов (от 0 и больше)`);
+let finalGrade = 0;
+    if(grade > 90 || numberProjects > 10) {
+        finalGrade = 100;
+    }
+    else if(grade > 75 && numberProjects >= 5) {
+        finalGrade = 90;
+    }
+    else if(grade > 50 && numberProjects >= 2) {
+        finalGrade = 75;
+    }
+    else {
+        finalGrade = 0;
+    }
+    console.log ("Ваш выпускной балл: " + finalGrade);
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// Задание 12
+// День аренды автомобиля стоит $40. При аренде на 7 или больше дней вы получаете общую итоговую скидку $50. Если вы арендуете авто на 3 или более дней, ваша общая скидка составит $20.
+
+// Количество дней, на которые нужно арендовать авто, запрашиваются с помощью prompt. Напишите программу, рассчитывающую общую стоимость аренды на запрашиваемое количество дней.
+
+        const rentDays = prompt(`Введите количество дней, на которые нужно арендовать авто? 1 день = 40$`);
+        let cost = rentDays * 40;
+
+        if (rentDays >= 3 && rentDays < 7) {
+            cost -= 20;
+        }
+        if (rentDays >=7) {
+            cost -= 50;
+        }
+
+        console.log("С Вас: " + cost);
+    </script>
+</body>
+</html>
